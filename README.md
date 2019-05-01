@@ -40,13 +40,15 @@
 3. ผู้เล่นที่สะสมเเต้มดาวได้ถึง 200 หรือ กำจัดมอนสเตอร์ครบ 5 ตัวก่อน เป็นผู้ชนะ
   
 ## Player and Monsters
-|Player1|Player2|Player3|Player4|
-|-|-|-|-|
-|![player_one](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_one.png)|![player_two](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_two.png)|![player_three](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_three.png)|![player_four](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_four.png)|
+![player_one](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_one.png)
+![player_two](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_two.png)
+![player_three](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_three.png)
+![player_four](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_four.png)
 
-|Monster1|Monster2|Monster3|Monster4|
-|-|-|-|-|
-|![monster_one](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_one.png)|![monster_two](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_two.png)|![monster_three](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_three.png)|![monster_four](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_four.png)|
+![monster_one](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_one.png)
+![monster_two](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_two.png)
+![monster_three](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_three.png)
+![monster_four](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_four.png)
 
 ## Tools and library :hammer:
 - C language
@@ -59,8 +61,11 @@
 ## Video :tv:
 - รออัพเดท
 
-## Members :raising_hand:
-- 61070079    นายธนา สามารถ         - [ThanaIT079](https://github.com/ThanaIT079)
-- 61070082    นายธเนศวร พิมพ์พา     - [Thanesuan07](https://github.com/thanesuan07)
-- 61070082    นายปรมินทร์ สุนทรเสณี     - [Paramin11798](https://github.com/Paramin11798)
-- 61070116    นายประกาศิต บริบูรณ์   - [Pragasit](https://github.com/pragasit)
+## Team Members :raising_hand:
+|||||
+|:-:|--|---------------|---------|
+|<img width="100" src="https://avatars1.githubusercontent.com/u/44795950?s=100&v=4">|นายธนา สามารถ|[ThanaIT079](https://github.com/ThanaIT079)|61070079|
+|![2](https://avatars0.githubusercontent.com/u/43009126?s=100&v=4)|นายธเนศวร พิมพ์พา|[Thanesuan07](https://github.com/thanesuan07)|61070082|
+|![3](https://avatars3.githubusercontent.com/u/41178266?s=100&v=4)|นายปรมินทร์ สุนทรเสณี|[Paramin11798](https://github.com/Paramin11798)|61070114|
+|![4](https://avatars0.githubusercontent.com/u/32674358?s=100&v=4)|นายประกาศิต บริบูรณ์|[Pragasit](https://github.com/pragasit)|61070116|
+
