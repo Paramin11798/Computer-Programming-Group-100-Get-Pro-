@@ -41,6 +41,8 @@
 ## Reference
 - [100% Orange Juice](https://store.steampowered.com/app/282800/100_Orange_Juice/?l=thai)
 
+## Video
+- รออัพเดท
 ## Members
 - 61070079    นายธนา สามารถ         - [ThanaIT079](https://github.com/ThanaIT079)
 - 61070082    นายธเนศวร พิมพ์พา     - [Thanesuan07](https://github.com/thanesuan07)
