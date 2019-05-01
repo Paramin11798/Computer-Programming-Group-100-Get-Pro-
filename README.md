@@ -34,16 +34,13 @@
 3. ผู้เล่นที่สะสมเเต้มดาวได้ถึง 200 หรือ กำจัดมอนสเตอร์ครบ 5 ตัวก่อน เป็นผู้ชนะ
   
 ## Player and Monsters
-![player_one](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_one.png)
-![player_two](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_two.png)
-![player_three](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_three.png)
-![player_four](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_four.png)
+|Player1|Player2|Player3|Player4|
+|-|-|-|-|
+|![player_one](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_one.png)|![player_two](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_two.png)|![player_three](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_three.png)|![player_four](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/player_four.png)|
 
-
-![monster_one](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_one.png)
-![monster_two](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_two.png)
-![monster_three](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_three.png)
-![monster_four](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_four.png)
+|Monster1|Monster2|Monster3|Monster4|
+|-|-|-|-|
+|![monster_one](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_one.png)|![monster_two](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_two.png)|![monster_three](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_three.png)|![monster_four](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_four.png)|
 
 ## Tools and library :hammer:
 - C language
