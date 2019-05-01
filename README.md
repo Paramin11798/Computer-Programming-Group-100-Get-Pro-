@@ -2,7 +2,7 @@
   <img width="400" src="image/100-Get-Pro.png">
 </p>
 <p align="center">
-  <img width="400" src="Poster.jpg">
+  <img width="600" src="Poster.jpg">
 </p>
 
  ## Abstract :pencil2:
