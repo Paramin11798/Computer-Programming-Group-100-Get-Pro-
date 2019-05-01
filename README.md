@@ -33,7 +33,18 @@
 
 3. ผู้เล่นที่สะสมเเต้มดาวได้ถึง 200 หรือ กำจัดมอนสเตอร์ครบ 5 ตัวก่อน เป็นผู้ชนะ
   
-  
+## Player and Monsters
+![monster_one](https://user-images.githubusercontent.com/43009126/57026151-41063a00-6c63-11e9-962f-04e6b3ef3bbd.png)
+![monster_two](https://user-images.githubusercontent.com/43009126/57026220-7448c900-6c63-11e9-9acc-e86194b89cc1.png)
+![monster_three](https://user-images.githubusercontent.com/43009126/57026223-76128c80-6c63-11e9-88fd-54fee82e8c4e.png)
+![monster_four](https://user-images.githubusercontent.com/43009126/57026227-7743b980-6c63-11e9-8b40-93fcfc679ab3.png)
+
+![player_one](https://user-images.githubusercontent.com/43009126/57026274-96424b80-6c63-11e9-9c94-a8e4067a8214.png)
+![player_three](https://user-images.githubusercontent.com/43009126/57026275-96424b80-6c63-11e9-83e7-dadde4b24149.png)
+![player_two](https://user-images.githubusercontent.com/43009126/57026276-96dae200-6c63-11e9-9fc0-62d4c4b549cf.png)
+![player_four](https://user-images.githubusercontent.com/43009126/57026277-96dae200-6c63-11e9-9a37-fccde4057560.png)
+
+
 ## Tools and library :hammer:
 - C language
 - [Raylib](https://www.raylib.com/)
