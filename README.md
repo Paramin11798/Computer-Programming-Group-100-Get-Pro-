@@ -26,7 +26,6 @@
 
 ## Reference
 - [100% Orange Juice](https://store.steampowered.com/app/282800/100_Orange_Juice/?l=thai)
-- [Raylib](https://www.raylib.com/)
 
 ## Members
 - 61070079    นายธนา สามารถ         - [ThanaIT079](https://github.com/ThanaIT079)
