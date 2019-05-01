@@ -1,4 +1,6 @@
-# 100% Get-Pro!!!
+<p align="center">
+  <img width="400" src="image/100-Get-Pro.png">
+</p>
 <p align="center">
   <img width="400" src="Poster.jpg">
 </p>
