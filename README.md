@@ -1,5 +1,5 @@
-# Computer-Programming-(Group-100% Get-Pro!!!)
- ## คำอธิบายโครงงาน
+# Computer Programming (100% Get-Pro!!!)
+ ## Abstract
   	
 เกมเป็นลักษณะของกิจกรรมของมนุษย์เพื่อประโยชน์อย่างใดอย่างหนึ่ง เช่น เพื่อความสนุกสนานบันเทิง เพื่อฝึกทักษะ เพื่อการเรียนรู้ 
 และประโยชน์ทางการศึกษาได้ ซึ่งในปัจจุบันเกมได้มีพัฒนาการอย่างมากมายเเละหนึ่งในนั้นได้มีเเนวเกมชนิดหนึ่งที่่ผู้พัฒนานั้นให้ความสนใจเป็นพิเศษ 
@@ -19,9 +19,13 @@
 	
 ## รายละเอียดโครงงาน
   
+## Reference
+[100% Orange Juice](https://store.steampowered.com/app/282800/100_Orange_Juice/?l=thai)
 
-## สมาชิก
+
+
+## Members
 - 61070079    นายธนา สามารถ         - [ThanaIT079](https://github.com/ThanaIT079)
-- 61070082    นายธเนศวร พิมพ์พา     - [thanesuan07](https://github.com/thanesuan07)
+- 61070082    นายธเนศวร พิมพ์พา     - [Thanesuan07](https://github.com/thanesuan07)
 - 61070082    นายปรมินทร์ สุนทรเสณี     - [Paramin11798](https://github.com/Paramin11798)
-- 61070116    นายประกาศิต บริบูรณ์   - [pragasit](https://github.com/pragasit)
+- 61070116    นายประกาศิต บริบูรณ์   - [Pragasit](https://github.com/pragasit)
