@@ -1,4 +1,8 @@
 # 100% Get-Pro!!!
+<p align="center">
+  <img width="400" src="Poster.jpg">
+</p>
+
  ## Abstract :pencil2:
   	
 เกมเป็นลักษณะของกิจกรรมของมนุษย์เพื่อประโยชน์อย่างใดอย่างหนึ่ง เช่น เพื่อความสนุกสนานบันเทิง เพื่อฝึกทักษะ เพื่อการเรียนรู้ 
@@ -47,10 +51,12 @@
 - [Raylib](https://www.raylib.com/)
 
 ## Reference :memo:
-- [100% Orange Juice](https://store.steampowered.com/app/282800/100_Orange_Juice/?l=thai)
+- [Game 100% Orange Juice](https://store.steampowered.com/app/282800/100_Orange_Juice/?l=thai)
+- ตัวละครและมอนสเตอร์จากเกมส์ `girl frontline`
 
 ## Video :tv:
 - รออัพเดท
+
 ## Members :raising_hand:
 - 61070079    นายธนา สามารถ         - [ThanaIT079](https://github.com/ThanaIT079)
 - 61070082    นายธเนศวร พิมพ์พา     - [Thanesuan07](https://github.com/thanesuan07)
