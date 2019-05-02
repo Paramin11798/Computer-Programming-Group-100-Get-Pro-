@@ -59,7 +59,7 @@
 - ตัวละครและมอนสเตอร์จากเกมส์ [Girls' Frontline](https://www.gfwiki.com/wiki/Girls%27_Frontline_Wiki)
 
 ## Video :tv:
-- รออัพเดท
+- https://www.youtube.com/watch?v=EDpNfX2pR1U&feature=youtu.be
 
 ## Team Members :raising_hand:
 |||||
