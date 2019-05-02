@@ -56,7 +56,7 @@
 
 ## Reference :memo:
 - [Game 100% Orange Juice](https://store.steampowered.com/app/282800/100_Orange_Juice/?l=thai)
-- ตัวละครและมอนสเตอร์จากเกมส์ `girl frontline`
+- ตัวละครและมอนสเตอร์จากเกมส์ [Girls' Frontline](https://www.gfwiki.com/wiki/Girls%27_Frontline_Wiki)
 
 ## Video :tv:
 - รออัพเดท
