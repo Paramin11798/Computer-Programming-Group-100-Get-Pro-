@@ -51,7 +51,7 @@
 ![monster_four](https://github.com/Paramin11798/Computer-Programming-Group-100-Get-Pro-/blob/master/image/monster_four.png)
 
 ## Tools and library :hammer:
-- C language
+- C and C++
 - [Raylib](https://www.raylib.com/)
 
 ## Reference :memo:
