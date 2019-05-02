@@ -52,8 +52,10 @@ int main()
     }
     
     
-    InitWindow(screenWidth, screenHeight, "100% GetPro : Version 1.0.0");
-   
+    InitWindow(screenWidth, screenHeight, "100% GetPro : Version 1.0.1");
+    // 1.0.0 4/2/2019
+    // 1.0.1 5/2/2019
+    
     InitAudioDevice();             
 
     Music BG = LoadMusicStream("sound/001 - bgs_screen.ogg"); // set sound
@@ -63,9 +65,9 @@ int main()
     PlayMusicStream(BG); // loop play
     
     bool start = false;
-    bool win = false;
-    
-    SetTargetFPS(60);
+
+    SetTargetFPS(60
+    );
     
     Image image1 = LoadImage("image/player_one.png");
     Image image2 = LoadImage("image/player_two.png");
@@ -201,72 +203,129 @@ int main()
     int player_three_dice = 0;
     int player_four_dice = 0;
     
-    
-    
-    int randomdice = GetRandomValue(1,6);
-    
-    int randomstar = GetRandomValue(1,5);
-    
-    int randomevent = GetRandomValue(1, 4);
-    
-    int randomplayer = GetRandomValue(1, 4);
-    
-    int randommonster = GetRandomValue(1, 4);
-    
-    int randomatk = GetRandomValue(1, 5);
-    
-    int randomdef = GetRandomValue(1, 5);
-     
-    int monster_spawn = 0;
-    
-    int monster_hp = 5;
-    
-    int monster_star = 10;
-    
-    int turn = 0;
-    
-    int end = 0;
-    
-    int endgame = 1;
-    
-    int play_turn = 0;
-    
     int finish1 = 0;
     int finish2 = 0;
     int finish3 = 0;
     int finish4 = 0;
     
-    static bool gameOver;
+    int player_one_event = 0;
+    int player_two_event = 0;
+    int player_three_event = 0;
+    int player_four_event = 0;
+    
+    int monster_spawn = 0;    
+    int monster_hp = 5;    
+    int monster_star = 10;
+    
+    int turn = 0;    
+    int end = 0;    
+    int endgame = 1;    
+    int play_turn = 0;
+    
+    int randomdice = GetRandomValue(1,6);
+    int randomstar = GetRandomValue(1,5); 
+    int randomevent = GetRandomValue(1, 4);    
+    int randomplayer = GetRandomValue(1, 4);    
+    int randommonster = GetRandomValue(1, 4);    
+    int randomatk = GetRandomValue(1, 5);    
+    int randomdef = GetRandomValue(1, 5);
+     
+    
+    
     
     while (!WindowShouldClose())    // Detect window close button or ESC key
     {
         ClearBackground(RAYWHITE);
         UpdateMusicStream(BG);
-        gameOver = false;
+        
         if (!start){ 
             BeginDrawing();
                 if (player_one_winner == 1){
                     DrawTexture(texture13, 330, 70, WHITE);
                     DrawText("Player One Win!", 270, 400, 50, MAROON);
-                    
+                    if (IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)){player_one_winner = 0; end = 2;}
+                        
                 }
                 else if (player_two_winner == 1){
                     DrawTexture(texture14, 370, 80, WHITE);
                     DrawText("Player Two Win!", 270, 400, 50, MAROON);
+                    if (IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)){player_two_winner = 0; end = 2;}
                 }
                 else if (player_three_winner == 1){
                     DrawTexture(texture15, 360, 80, WHITE);
                     DrawText("Player Three Win!", 260, 400, 50, MAROON);
+                    if (IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)){player_three_winner = 0; end = 2;}
                 }
                 else if (player_four_winner == 1){
                     DrawTexture(texture16, 380, 80, WHITE);
                     DrawText("Player Four Win!", 265, 400, 50, MAROON);
+                    if (IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)){player_four_winner = 0; end = 2;}
                 }
                 else if (end == 0){
                     DrawText("100% GetPro!", 310, 200, 50, MAROON);
                     DrawText("Any click to start", 330, 300, 30, MAROON);
                     if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON) || IsMouseButtonPressed(MOUSE_MIDDLE_BUTTON) || IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)) 
                     {start = !start; PlaySound(seclection);}
+                }
+                else if (end == 2){
+                    DrawText("100% GetPro!", 310, 200, 50, MAROON);
+                    DrawText("Any click to start", 330, 300, 30, MAROON);
+                    if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON) || IsMouseButtonPressed(MOUSE_MIDDLE_BUTTON) || IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)) 
+                    {start = !start; PlaySound(seclection);}
+                        player_one_position = 1;
+                        player_two_position = 10;
+                        player_three_position = 19;
+                        player_four_position = 28;
+    
+                        player_one_hp = 5;
+                        player_two_hp = 5;
+                        player_three_hp = 5;
+                        player_four_hp = 5;
+    
+                        player_one_star = 0;
+                        player_two_star = 0;
+                        player_three_star = 0;
+                        player_four_star = 0;
+    
+                        player_one_win = 0;
+                        player_two_win = 0;
+                        player_three_win = 0;
+                        player_four_win = 0;
+    
+     
+                        player_one_winner = 0;
+                        player_two_winner = 0;
+                        player_three_winner = 0;
+                        player_four_winner = 0;
+    
+                        player_one_down = 5;
+                        player_two_down = 5;
+                        player_three_down = 5;
+                        player_four_down = 5;
+    
+                        player_one_dice = 0;
+                        player_two_dice = 0;
+                        player_three_dice = 0;
+                        player_four_dice = 0;
+    
+                        finish1 = 0;
+                        finish2 = 0;
+                        finish3 = 0;
+                        finish4 = 0;
+    
+                        player_one_event = 0;
+                        player_two_event = 0;
+                        player_three_event = 0;
+                        player_four_event = 0;
+    
+                        monster_spawn = 0;    
+                        monster_hp = 5;    
+                        monster_star = 10;
+    
+                        turn = 0;    
+                        end = 0;    
+                        endgame = 1;    
+                        play_turn = 0;
                 }
                        
                 EndDrawing();
@@ -294,10 +353,46 @@ int main()
             DrawRectangle(70, 420, 50, 50, PINK);
             DrawRectangle(420, 420, 50, 50, PINK);
             
-            DrawText("1", 90, 82, 30, BLACK);
-            DrawText("2", 437, 82, 30, BLACK);
-            DrawText("3", 87, 432, 30, BLACK);
-            DrawText("4", 437, 432, 30, BLACK);
+            DrawText("1", 90, 82, 30, MAROON);
+            DrawText("2", 37, 82, 30, BLACK);
+            DrawText("3", 37, 132, 30, BLACK);
+            DrawText("4", 37, 182, 30, BLACK);
+            DrawText("5", 37, 232, 30, BLACK);
+            DrawText("6", 37, 282, 30, BLACK);
+            DrawText("7", 37, 332, 30, BLACK);
+            DrawText("8", 37, 382, 30, BLACK);
+            DrawText("9", 37, 432, 30, BLACK);
+            
+            DrawText("10", 82, 432, 30, MAROON);
+            DrawText("11", 87, 482, 30, BLACK);
+            DrawText("12", 132, 482, 30, BLACK);
+            DrawText("13", 182, 482, 30, BLACK);
+            DrawText("14", 232, 482, 30, BLACK);
+            DrawText("15", 282, 482, 30, BLACK);
+            DrawText("16", 332, 482, 30, BLACK);
+            DrawText("17", 382, 482, 30, BLACK);
+            DrawText("18", 432, 482, 30, BLACK);
+            
+            DrawText("19", 432, 432, 30, MAROON);
+            DrawText("20", 479, 432, 30, BLACK);
+            DrawText("21", 485, 382, 30, BLACK);
+            DrawText("22", 479, 332, 30, BLACK);
+            DrawText("23", 479, 282, 30, BLACK);
+            DrawText("24", 479, 232, 30, BLACK);
+            DrawText("25", 479, 182, 30, BLACK);
+            DrawText("26", 479, 132, 30, BLACK);
+            DrawText("27", 479, 82, 30, BLACK);
+            
+            DrawText("28", 428, 82, 30, MAROON);          
+            DrawText("29", 428 , 32, 30, BLACK);
+            DrawText("30", 378, 32, 30, BLACK);
+            DrawText("31", 332, 32, 30, BLACK);
+            DrawText("32", 278, 32, 30, BLACK);
+            DrawText("33", 228, 32, 30, BLACK);
+            DrawText("34", 178, 32, 30, BLACK);
+            DrawText("35", 128, 32, 30, BLACK);
+            DrawText("36", 78, 32, 30, BLACK);
+            
             
             // player stand , down
             if(player_one_hp > 0){DrawTexture(texture1, 540, 30, WHITE);}
@@ -366,7 +461,9 @@ int main()
             
             // Game Turn ++ after player four finished
             DrawText(FormatText("Turn : %02i", turn), 120, 140, 35, BLACK);
-            DrawText(FormatText("Player : %02i", play_turn), 120, 190, 25, BLACK);
+            DrawText(FormatText("Player : %02i", play_turn), 120, 185, 25, BLACK);
+            
+            
             
             switch(randomdice){               
                 case 1: DrawTexture(texture_dice1, 300, 160, WHITE); break;
@@ -404,59 +501,176 @@ int main()
                     
                 }
                 
-                // draw the dice down
-                if (play_turn == 1 && player_one_dice == 0 && player_one_hp <= 0 && IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)){
-                    randomdice = GetRandomValue(1,6);
-                    if (randomdice >= player_one_down){player_one_hp = 5; play_turn = 2; player_one_down = 5;} 
-                    else{play_turn = 2; player_one_down--;}
+                // draw the dice down 
+                if (play_turn == 1 && player_one_dice == 0 && player_one_hp <= 0){
+                    DrawText("Right click!! ", 120, 225, 25, BLACK);
+                    DrawText(FormatText("Get Point more: %02i", player_one_down), 120, 260, 20, BLACK);
+                    player_one_event = 0;
+                    
+                    if (IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)){
+                        player_four_event = 0;
+                        randomdice = GetRandomValue(1,6);
+                            if (randomdice >= player_one_down){player_one_hp = 5; play_turn = 2; player_one_down = 5;} 
+                            else{play_turn = 2; player_one_down--;}
+                    }
+                    
                 }
                 
-                else if (play_turn == 2 && player_two_dice == 0 && player_two_hp <= 0 && IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)){
-                    randomdice = GetRandomValue(1,6);
-                    if (randomdice >= player_two_down){player_two_hp = 5; play_turn = 3; player_two_down = 5;} 
-                    else{play_turn = 3; player_two_down--;}
+                else if (play_turn == 2 && player_two_dice == 0 && player_two_hp <= 0){
+                    
+                    DrawText("Right click!! ", 120, 225, 25, BLACK);
+                    DrawText(FormatText("Get Point more: %02i", player_two_down), 120, 260, 20, BLACK);
+                    player_two_event = 0;
+                    
+                    if (IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)){
+                        player_one_event = 0;
+                        randomdice = GetRandomValue(1,6);
+                        if (randomdice >= player_two_down){player_two_hp = 5; play_turn = 3; player_two_down = 5;} 
+                        else{play_turn = 3; player_two_down--;}
+                    }
+                    
                 }
                 
-                else if (play_turn == 3 && player_three_dice == 0 && player_three_hp <= 0 && IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)){
-                    randomdice = GetRandomValue(1,6);
-                    if (randomdice >= player_three_down){player_three_hp = 5; play_turn = 4; player_three_down = 5;} 
-                    else{play_turn = 4; player_three_down--;}
+                else if (play_turn == 3 && player_three_dice == 0 && player_three_hp <= 0 ){
+                    
+                    DrawText("Right click!! ", 120, 225, 25, BLACK);
+                    DrawText(FormatText("Get Point more: %02i", player_three_down), 120, 260, 20, BLACK);
+                    player_three_event = 0;
+                    
+                    if (IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)){
+                        player_two_event = 0;
+                        randomdice = GetRandomValue(1,6);
+                        if (randomdice >= player_three_down){player_three_hp = 5; play_turn = 4; player_three_down = 5;} 
+                        else{play_turn = 4; player_three_down--;}
+                    }
+                    
                 }
                 
-                else if (play_turn == 4 && player_four_dice == 0 && player_four_hp <= 0 && IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)){
-                    randomdice = GetRandomValue(1,6);
-                    if (randomdice >= player_four_down){player_four_hp = 5; play_turn = 0; player_four_down = 5;} 
-                    else{play_turn = 0; player_four_down--;}
+                else if (play_turn == 4 && player_four_dice == 0 && player_four_hp <= 0 ){
+                    
+                    DrawText("Right click!! ", 120, 225, 25, BLACK);
+                    DrawText(FormatText("Get Point more: %02i", player_four_down), 120, 260, 20, BLACK);
+                    player_four_event = 0;
+                    
+                    if (IsMouseButtonPressed(MOUSE_RIGHT_BUTTON)){
+                        player_three_event = 0;
+                         randomdice = GetRandomValue(1,6);
+                        if (randomdice >= player_four_down){player_four_hp = 5; play_turn = 0; player_four_down = 5;} 
+                        else{play_turn = 0; player_four_down--;}
+                    }
+                    
                 }
                 
                 // draw the dice stand
-                if (play_turn == 1 && player_one_dice == 0 && player_one_hp > 0 && IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
-                    randomdice = GetRandomValue(1,6); 
-                    player_one_dice = 1; 
-                    player_one_position += randomdice;
-                    play_turn = 2;
-                    if (player_one_position > 36){player_one_position -= 36;}
+                
+                
+                if (play_turn == 1 && player_one_dice == 0 && player_one_hp > 0 ){
+                    
+                    // check event to draw
+                    if (player_four_event == 1){
+                       DrawText("Player 04 :  Bouns Star!", 120, 250, 20, BLACK); 
+                    }
+                    if (player_four_event == 2){
+                       DrawText("Player 04 :  Drop Star!", 120, 250, 20, BLACK); 
+                    }
+                    if (player_four_event == 3){
+                       DrawText("Player 04 :  Random Event!", 120, 250, 20, BLACK); 
+                    }
+                    if (player_four_event == 4){
+                       DrawText("Player 04 :  Attck Monster!", 120, 250, 20, BLACK); 
+                    }
+                    
+                    
+                    
+                    if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                        randomdice = GetRandomValue(1,6); 
+                        player_one_dice = 1; 
+                        player_one_position += randomdice;
+                        play_turn = 2;
+                        player_four_event = 0;
+                        if (player_one_position > 36){player_one_position -= 36;}
+                    }
+                     
                 }
-                else if (play_turn == 2 && player_two_dice == 0 && player_two_hp > 0 && IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
-                    randomdice = GetRandomValue(1,6); 
-                    player_two_dice = 1; 
-                    player_two_position += randomdice;
-                    play_turn = 3;
+                else if (play_turn == 2 && player_two_dice == 0 && player_two_hp > 0 ){
+                    
+                    // check event to draw
+                    if (player_one_event == 1){
+                       DrawText("Player 01 :  Bouns Star!", 120, 250, 20, BLACK); 
+                    }
+                    if (player_one_event == 2){
+                       DrawText("Player 01 :  Drop Star!", 120, 250, 20, BLACK); 
+                    }
+                    if (player_one_event == 3){
+                       DrawText("Player 01 :  Random Event!", 120, 250, 20, BLACK); 
+                    }
+                    if (player_one_event == 4){
+                       DrawText("Player 01 :  Attck Monster!", 120, 250, 20, BLACK); 
+                    }
+                    
+                    if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                        randomdice = GetRandomValue(1,6); 
+                        player_two_dice = 1; 
+                        player_two_position += randomdice;
+                        play_turn = 3;
+                        player_one_event = 0;
                     if (player_two_position > 36){player_two_position -= 36;}
+                    }
+                    
                 }
-                else if (play_turn == 3 && player_three_dice == 0 && player_three_hp && IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
-                    randomdice = GetRandomValue(1,6); 
-                    player_three_dice = 1; 
-                    player_three_position += randomdice;
-                    play_turn = 4;
+                else if (play_turn == 3 && player_three_dice == 0 && player_three_hp > 0){
+                    
+                    // check event to draw
+                    if (player_two_event == 1){
+                       DrawText("Player 02 :  Bouns Star!", 120, 250, 20, BLACK); 
+                    }
+                    if (player_two_event == 2){
+                       DrawText("Player 02 :  Drop Star!", 120, 250, 20, BLACK); 
+                    }
+                    if (player_two_event == 3){
+                       DrawText("Player 02:  Random Event!", 120, 250, 20, BLACK); 
+                    }
+                    if (player_two_event == 4){
+                       DrawText("Player 02 :  Attck Monster!", 120, 250, 20, BLACK); 
+                    }
+                    
+                    if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                        randomdice = GetRandomValue(1,6); 
+                        player_three_dice = 1; 
+                        player_three_position += randomdice;
+                        play_turn = 4;
+                        player_two_event = 0;
                     if (player_three_position > 36){player_three_position -= 36;}
+                    }
+                    
                 }
-                else if (play_turn == 4 && player_four_dice == 0 && player_four_hp > 0 && IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
-                    randomdice = GetRandomValue(1,6); 
-                    player_four_dice = 1; 
-                    player_four_position += randomdice;
-                    play_turn = 0;
+                else if (play_turn == 4 && player_four_dice == 0 && player_four_hp > 0 ){
+                    
+                    
+                    // check event to draw
+                    if (player_three_event == 1){
+                       DrawText("Player 03 :  Bouns Star!", 120, 250, 20, BLACK); 
+                    }
+                    if (player_three_event == 2){
+                       DrawText("Player 03 :  Drop Star!", 120, 250, 20, BLACK); 
+                    }
+                    if (player_three_event == 3){
+                       DrawText("Player 03:  Random Event!", 120, 250, 20, BLACK); 
+                    }
+                    if (player_three_event == 4){
+                       DrawText("Player 03 :  Attck Monster!", 120, 250, 20, BLACK); 
+                    }
+                    
+                    
+                    if (IsMouseButtonPressed(MOUSE_LEFT_BUTTON)){
+                        randomdice = GetRandomValue(1,6); 
+                        player_four_dice = 1; 
+                        player_four_position += randomdice;
+                        play_turn = 0;
+                        player_three_event = 0;
                     if (player_four_position > 36){player_four_position -= 36;}
+                    }
+                    
                 }
                 
                 
@@ -467,6 +681,7 @@ int main()
                         if (player_one_position == star[i]){
                             randomstar = GetRandomValue(1,5);
                             player_one_star += (randomstar*4);
+                            player_one_event = 1;
                             finish1 = 1;
                         }
                     }
@@ -475,6 +690,7 @@ int main()
                         if (player_one_position == drop[i]){
                             randomstar = GetRandomValue(1,5);
                             player_one_star -= (randomstar*2);
+                            player_one_event = 2;
                             //if (player_one_star < 0) {player_one_star = 0;}
                             finish1 = 1;
                         }
@@ -482,6 +698,7 @@ int main()
                     //1.3 event
                     for (int i = 0; i < 8; i++){
                         if (player_one_position == event[i]){
+                           player_one_event = 3;
                            randomevent = GetRandomValue(1, 4);
                             if (randomevent == 1 && player_one_hp <= 3){ // regen 2 hp if hp <= 3 
                                 player_one_hp += 2;
@@ -510,6 +727,7 @@ int main()
                     //1.4 PVE
                     for (int i = 0; i < 4; i++){
                         if (player_one_position == monster[i]){
+                            player_one_event = 4;
                             randomatk = GetRandomValue(1, 5);
                             randomdef = GetRandomValue(1, 5);
                             
@@ -535,6 +753,7 @@ int main()
                     //2.1 star [bonus]
                     for (int i = 0; i < 12; i++){
                         if (player_two_position == star[i]){
+                            player_two_event = 1;
                             randomstar = GetRandomValue(1,5);
                             player_two_star += (randomstar*4);
                             finish2 = 1;
@@ -543,6 +762,7 @@ int main()
                     //2.2 star [drop]
                     for (int i = 0; i < 4; i++){
                         if (player_two_position == drop[i]){
+                            player_two_event = 2;
                             randomstar = GetRandomValue(1,5);
                             player_two_star -= (randomstar*2);
                             //if (player_two_star < 0) {player_two_star = 0;}
@@ -552,6 +772,7 @@ int main()
                     //2.3 event
                     for (int i = 0; i < 8; i++){
                         if (player_two_position == event[i]){
+                           player_two_event = 3;
                            randomevent = GetRandomValue(1, 4);
                             if (randomevent == 1 && player_two_hp <= 3){ // regen 2 hp if hp <= 3 
                                 player_two_hp += 2;
@@ -580,6 +801,7 @@ int main()
                     //2.4 PVE
                     for (int i = 0; i < 4; i++){
                         if (player_two_position == monster[i]){
+                            player_two_event = 4;
                             randomatk = GetRandomValue(1, 5);
                             randomdef = GetRandomValue(1, 5);
                             
@@ -606,6 +828,7 @@ int main()
                     //3.1 star [bonus]
                     for (int i = 0; i < 12; i++){
                         if (player_three_position == star[i]){
+                            player_three_event = 1;
                             randomstar = GetRandomValue(1,5);
                             player_three_star += (randomstar*4);
                             finish3 = 1;
@@ -615,6 +838,7 @@ int main()
                     //3.2 star [drop]
                     for (int i = 0; i < 4; i++){
                         if (player_three_position == drop[i]){
+                            player_three_event = 2;
                             randomstar = GetRandomValue(1,5);
                             player_three_star -= (randomstar*2);
                             //if (player_three_star < 0) {player_three_star = 0;}
@@ -624,6 +848,7 @@ int main()
                     //3.3 event
                     for (int i = 0; i < 8; i++){
                         if (player_three_position == event[i]){
+                            player_three_event = 3;
                            randomevent = GetRandomValue(1, 4);
                             if (randomevent == 1 && player_three_hp <= 3){ // regen 2 hp if hp <= 3 
                                 player_three_hp += 2;
@@ -652,6 +877,7 @@ int main()
                     //3.4  PVE
                     for (int i = 0; i < 4; i++){
                         if (player_three_position == monster[i]){
+                            player_three_event = 4;
                             randomatk = GetRandomValue(1, 5);
                             randomdef = GetRandomValue(1, 5);
                             
@@ -679,6 +905,7 @@ int main()
                     //4.1 star [bonus]
                     for (int i = 0; i < 12; i++){
                         if (player_four_position == star[i]){
+                            player_four_event = 1;
                             randomstar = GetRandomValue(1,5);
                             player_four_star += (randomstar*4);
                             finish4 = 1;
@@ -688,6 +915,7 @@ int main()
                     //4.2 star [drop]
                     for (int i = 0; i < 4; i++){
                         if (player_four_position == drop[i]){
+                            player_four_event = 2;
                             randomstar = GetRandomValue(1,5);
                             player_four_star -= (randomstar*2);
                             //if (player_four_star < 0) {player_four_star = 0;}
@@ -697,7 +925,8 @@ int main()
                     //4.3 event
                     for (int i = 0; i < 8; i++){
                         if (player_four_position == event[i]){
-                           randomevent = GetRandomValue(1, 4);
+                            player_four_event = 3;
+                            randomevent = GetRandomValue(1, 4);
                             if (randomevent == 1 && player_four_hp <= 3){ // regen 2 hp if hp <= 3 
                                 player_four_hp += 2;
                             }
@@ -725,6 +954,7 @@ int main()
                     //4.4  PVE
                     for (int i = 0; i < 4; i++){
                         if (player_four_position == monster[i]){
+                            player_four_event = 4;
                             randomatk = GetRandomValue(1, 5);
                             randomdef = GetRandomValue(1, 5);
                             
